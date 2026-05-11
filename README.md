@@ -1,36 +1,39 @@
 # M-BRAACE
 
-**Michaigan - Boeing Research in Aircraft Architecture for Cryofuel Efficiency** — a multidisciplinary design optimization (MDO) framework for a cryogenically-fueled aircraft concept, developed at the University of Michigan.
+**Michigan – Boeing Research in Aircraft Architecture for Cryofuel Efficiency**
 
-## Overview
+A multidisciplinary design optimization (MDO) framework for a cryogenically-fueled aircraft concept. Developed at the University of Michigan as part of the M-BRAACE MBSE design project; results presented at Boeing design reviews.
 
-This repository is a Python-based design and analysis toolkit covering aircraft sizing, empennage optimization, and Monte Carlo feasibility analysis for a cryofuel aircraft concept. The framework was used to iterate on aircraft configuration, evaluate design feasibility across required mission performance and stability parameters, and produce the final design point presented at Boeing design reviews.
+## Framework
 
-## Repository Structure
-
+```mermaid
+flowchart TD
+    M[M-BRAACE<br/>Cryofuel Aircraft MDO]
+    M --> A[Sizing]
+    M --> B[Tail Optimization]
+    M --> C[Feasibility Analysis]
 ```
-M-BRAACE/
-├── Aircraft_Sizeopt/   # Mission-level sizing & weight estimation
-├── Aircraft_Tailopt/   # T-tail structural & aerodynamic optimization
-└── montecarlo/         # Monte Carlo feasibility & sensitivity analysis
-```
 
-### `Aircraft_Sizeopt/`
+## Modules
 
-Conceptual sizing loop — Drives the top-level design variables passed downstream to the tail optimizer.
+| Directory | Purpose |
+|---|---|
+| `Aircraft_Sizeopt/` | Conceptual sizing — weight buildup, fuel fraction, mission profile |
+| `Aircraft_Tailopt/` | T-tail MDO via `pyoptsparse` / SLSQP — 5 design variables, 17 constraints (boom deflection, spar stress, von Mises yield, torsional rigidity) |
+| `montecarlo/` | Monte Carlo sampling over aero & structural uncertainty to characterize feasibility margins |
 
-### `Aircraft_Tailopt/`
+Per-module results and plots live inside each directory.
 
-T-tail multidisciplinary optimization using `pyoptsparse` with the SLSQP gradient-based solver. Five design variables, seventeen constraints spanning boom deflection, spar stress, von Mises yield, and torsional rigidity. Couples aerodynamic loading with structural sizing.
+## Sample Result
 
-### `montecarlo/`
+<p align="center">
+  <img src="montecarlo/stability_histogram.png" width="600" alt="Stability distribution from Monte Carlo feasibility analysis"/>
+</p>
 
-Monte Carlo sampling over uncertainty in aerodynamic and structural parameters to characterize feasibility margins and identify driving constraints in the design space.
+Distribution of static stability margin across Monte Carlo samples, used to identify the driving constraints in the feasibility envelope and analyze performance of the resulting tail design.
 
 ## Context
 
-Developed during 2025-26 as part of year 1 of the M-BRAACE MBSE design project at the University of Michigan. Results were presented at Boeing design reviews with engineering staff. Code is shared as a portfolio reference; not actively maintained.
+Year 1 of M-BRAACE (2025–26), University of Michigan · Sponsored research with Boeing · Code shared as portfolio reference; not actively maintained.
 
-## Author
-
-Jared Tuatini — University of Michigan, Aerospace Engineering and Computer Science
+**Author:** Jared Tuatini — Aerospace Engineering & Computer Science, University of Michigan
