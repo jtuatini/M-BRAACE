@@ -1,7 +1,7 @@
 # M-BRAACE
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-orange)
-![License](https://img.shields.io/github/license/jtuatini/M-BRAACE)
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Sponsor](https://img.shields.io/badge/sponsor-Boeing-blue)
 ![University](https://img.shields.io/badge/university%20-Michigan-00274C)
 
@@ -47,7 +47,7 @@ T-tail optimization converged to a near-feasible design with **16/18 constraints
 | Wing span | 5.02 m |
 | Wing area | 3.15 m² |
 | Cruise speed | 13.0 m/s |
-| Static margin | 13.9% |
+| Static margin | 13.0% |
 
 | Optimal Design Variable | Value |
 |---|---|
