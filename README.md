@@ -10,8 +10,8 @@ A multidisciplinary design optimization (MDO) framework for a cryogenically-fuel
 flowchart TD
     M[M-BRAACE<br/>Cryofuel Aircraft MDO]
     M --> A[Sizing]
-    M --> B[Tail Optimization]
-    M --> C[Feasibility Analysis]
+    A --> B[Tail Optimization]
+    B --> C[Feasibility Analysis]
 ```
 
 ## Modules
@@ -27,7 +27,7 @@ Per-module results and plots live inside each directory.
 ## Sample Result
 
 <p align="center">
-  <img src="montecarlo/stability_histogram.png" width="600" alt="Stability distribution from Monte Carlo feasibility analysis"/>
+  <img src="montecarlo/stability/static_margin_distribution.png" width="600" alt="Stability distribution from Monte Carlo feasibility analysis"/>
 </p>
 
 Distribution of static stability margin across Monte Carlo samples, used to identify the driving constraints in the feasibility envelope and analyze performance of the resulting tail design.
