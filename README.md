@@ -1,8 +1,8 @@
 # M-BRAACE
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-orange)
 ![License](https://img.shields.io/github/license/jtuatini/M-BRAACE)
-![Sponsor](https://img.shields.io/badge/sponsor-Boeing-orange)
+![Sponsor](https://img.shields.io/badge/sponsor-Boeing-blue)
 ![University](https://img.shields.io/badge/university%20-Michigan-00274C)
 
 **Michigan – Boeing Research in Aircraft Architecture for Cryofuel Efficiency**
