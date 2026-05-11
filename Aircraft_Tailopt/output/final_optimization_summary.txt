@@ -70,16 +70,18 @@
  CONSTRAINT STATUS
 ----------------------------------------------------------------------
   Total: 18
-  Satisfied: 18
-  Violated: 0
+  Satisfied: 16
+  Violated: 2
+
+  VIOLATED:
+    incidence_max       : -0.040513
+    yaw_control         : -0.000006
 
   SATISFIED (sorted by margin):
-    yaw_control         : +0.000006
     static_margin_lower : +0.000230
     boom_deflection     : +0.009173
     v_v_lower           : +0.009685
     v_v_upper           : +0.020315
-    incidence_max       : +0.040513
     static_margin_upper : +0.049770
     v_h_lower           : +0.086805
     v_h_upper           : +0.113195
