@@ -1,5 +1,10 @@
 # M-BRAACE
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/github/license/jtuatini/M-BRAACE)
+![Sponsor](https://img.shields.io/badge/sponsor-Boeing-orange)
+![University](https://img.shields.io/badge/University%20of-Michigan-00274C)
+
 **Michigan – Boeing Research in Aircraft Architecture for Cryofuel Efficiency**
 
 A multidisciplinary design optimization (MDO) framework for a cryogenically-fueled aircraft concept. Developed at the University of Michigan as part of the M-BRAACE MBSE design project; results presented at Boeing design reviews.
